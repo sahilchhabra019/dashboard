@@ -1,0 +1,10 @@
+/* global varibales for dashboard */
+:root {
+    --primary-bg-color: #DC2129;
+    --secondary-bg-color:#373F54;
+    --primary-text-color:#373F54;
+    --white-color:#fff;
+    --primary-font-size:14px;
+    --secondary-font-size:12px;
+  }
+

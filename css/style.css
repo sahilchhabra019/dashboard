@@ -1,0 +1,223 @@
+/* header css start here */
+.header .navbar {
+    height: 68px;
+    background-color: var(--primary-bg-color);
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.header .navbar .dropdown {
+    padding-top: 9px;
+}
+.header .navbar .dropdown a:hover {
+   background:none;
+}
+.header .navbar .dropdown a:focus {
+    background:transparent;
+ }
+ .header .navbar .dropdown a{
+ color: var(--white-color);
+ font-size: var(--primary-font-size);
+}
+.header .nav a:hover {
+    background-color: transparent;
+    border-color:transparent;
+}
+.header .navbar .dropdown-menu{
+    background-color:transparent;
+}
+/* header css end here */
+
+
+/* sidebar css start here */
+.sidebar-nav {
+    display: block;
+    float: left;
+    width: 150px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#sidebar-wrapper {
+    margin-left: -150px;
+    left: 70px;
+    width: 150px;
+    background:var(--secondary-bg-color);
+    position: fixed;
+    height: 100%;
+    z-index: 10000;
+    transition: all .4s ease 0s;
+}
+#sidebar_menu li a, .sidebar-nav li a {
+    color:var( --white-color);
+    display: block;
+    float: left;
+    text-decoration: none;
+    width: 150px;
+    background: var(--secondary-bg-color);
+    border-top: 1px solid var(--secondary-bg-color);
+    border-bottom: 1px solid var(--secondary-bg-color);
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    -o-transition: background .5s;
+    -ms-transition: background .5s;
+    transition: background .5s;
+}
+.sidebar-brand span {
+    padding-left: 64px;
+}
+.sidebar-link{
+    font-size:18px;
+}
+.sidebar-link span img{
+    padding-left:33px;
+}
+.sidebar-link span i{
+    color:#fff;
+}
+.sidebar-brand span i{
+    color:#fff;
+}
+.sidebar-nav li {
+    line-height: 60px;
+    font-size: 18px;
+  }
+  .sidebar-nav li {
+    line-height: 50px;
+    text-indent: 20px;
+}
+.sidebar-nav li a:hover {
+    color: #CCC;
+    background: #CCC;
+    text-decoration: none;
+  }
+ 
+/* breadcrums css start here */
+.breadcrumb ul {
+    margin-bottom: 0;
+    padding-left: 8px;
+}
+.breadcrumb li {
+    list-style-type: none;
+}
+.breadcrumb li span{
+    padding-left:10px;;
+}
+
+
+/* main content css start here */
+
+.card-figure{
+    margin: 0;
+    position: ABSOLUTE;
+    TOP: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card-figure img {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    padding: 10px;
+}
+.card{
+    background: #F5F6FA 0% 0% no-repeat padding-box;
+    border: 1px solid #D1CFCF;
+    border-radius: 3px;
+    display: flex;
+    padding:10px;
+}
+.content{
+    text-align: left;
+    padding-left: 25px;
+
+}
+.card .content .content-desc {
+    margin-bottom:10px;
+}
+.card .content .content-desc .text-para{
+    font-size:var(--secondary-font-size);
+    color:var(--primary-text-color);
+    font-weight: 400;
+    margin-top:0;
+    margin-bottom:0;
+}
+.card .content .content-desc .text-head {
+    font-size: var(--primary-font-size);
+    color: var(--primary-text-color);
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.card:hover .card-hover{
+    opacity: 1;
+    transition:0.3s;
+    right:13px;
+}
+.card-hover {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    top: -28px;
+    right: 0px;
+    transition:0.3s;
+    opacity: 0;
+}
+.card-hover li{
+    list-style-type:none;
+    display:inline;
+}
+.card-hover ul li a {
+    list-style-type: none;
+    display: inline;
+    border-radius: 50%;
+    background-color:var(--secondary-bg-color);
+    padding: 10px;
+    font-size: 23px;
+}
+.card-hover ul .delete a{
+    background-color:var(--primary-bg-color);
+  
+}
+.card-hover ul li a i{
+color:#fff;
+}
+.card-hover ul {
+    padding-left: 0;
+    text-align: right;
+}
+#page-content-wrapper {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+}
+#wrapper.active {
+    padding-left: 150px;
+}
+#wrapper.active #sidebar-wrapper {
+    left: 150px;
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+
+@media (max-width:767px) {
+    #wrapper {
+    padding-left: 70px;
+    transition: all .4s ease 0s;
+}
+#sidebar-wrapper {
+    left: 70px;
+}
+#wrapper.active {
+    padding-left: 150px;
+}
+#wrapper.active #sidebar-wrapper {
+    left: 150px;
+    width: 150px;
+    transition: all .4s ease 0s;
+}
+}
